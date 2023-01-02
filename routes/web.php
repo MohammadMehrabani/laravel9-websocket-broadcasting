@@ -22,3 +22,7 @@ Route::get('/playground', function () {
 
    return null;
 });
+
+Route::get('/ws', function () {
+    return view('websocket');
+});
