@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/playground', function () {
+   event(new \App\Events\PlaygroundEvent());
+
+   return null;
+});
